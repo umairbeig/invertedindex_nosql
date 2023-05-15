@@ -6,7 +6,7 @@ The collections being table1 , table2 , table 3.
 ## In case you still have to feed the data to db:
 
 run python3 mongo.py <textfile to be stored into db> -c <collection name of form table x>\
-make sure you have the requirements installed that are mentioned in requirements file@ /search-engine-main/python/requirement.txt\
+make sure you have the requirements installed that are mentioned in requirements file@ /search-engine-main/python/requirement.txt
 
 ## Run the Spring boot application  
 I used intellij in my case..just run the main method.\
