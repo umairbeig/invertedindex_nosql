@@ -15,7 +15,7 @@ The page will reload when you make changes.\
 You may also see any lint errors in the console.
 ## Data insertion;
 
-Insert the word.
-Select the collection you want to search from.
-If the word is found,card containing the docs is returned with count of the word in each doc.
-If word is not found, message"word not found is printed to console"
+Insert the word.\
+Select the collection you want to search from.\
+If the word is found,card containing the docs is returned with count of the word in each doc.\
+If word is not found, message"word not found is printed to console"\
