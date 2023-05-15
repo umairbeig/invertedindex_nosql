@@ -1,0 +1,33 @@
+import React, { useState,useEffect } from 'react';
+
+
+const Comp1 = () => {
+    const [docs, setDocs] = useState([]);
+
+    useEffect(() => {
+      const fetchDocs = async () => {
+        try {
+          const response = await fetch('http://localhost:8080/api/search/umair');
+          const data = await response.json();
+          setDocs(data);
+        } catch (error) {
+          console.error('Error:', error);
+        }
+      };
+  
+      fetchDocs();
+    }, []);
+  
+    return (
+      <div>
+        {docs.map((doc, index) => (
+          <div key={index}>
+            <p>Name: {doc.name}</p>
+            <p>Count: {doc.count}</p>
+          </div>
+        ))}
+      </div>
+    );
+  };
+
+export default Comp1;
